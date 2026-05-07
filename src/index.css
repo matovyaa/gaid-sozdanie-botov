@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+  
+  code {
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  }
+}
+
+@layer utilities {
+  .prose-purple {
+    @apply text-gray-300;
+  }
+  
+  .prose-purple h1,
+  .prose-purple h2,
+  .prose-purple h3,
+  .prose-purple h4 {
+    @apply text-purple-300 font-bold;
+  }
+  
+  .prose-purple strong {
+    @apply text-purple-200 font-semibold;
+  }
+  
+  .prose-purple code {
+    @apply text-purple-300 bg-slate-950/50 px-1.5 py-0.5 rounded text-sm;
+  }
+  
+  .prose-purple a {
+    @apply text-purple-400 hover:text-purple-300 transition-colors;
+  }
+  
+  .prose-purple blockquote {
+    @apply border-l-4 border-purple-500 pl-4 italic text-gray-400;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 2rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1b4b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9333ea;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Better tap targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Improved text selection */
+::selection {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
