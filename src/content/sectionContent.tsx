@@ -77,7 +77,7 @@ export function getSectionContent(sectionNumber: number) {
       return (
         <>
           <ImageBlock 
-            src="/images/character-creation.jpg"
+            src="./images/character-creation.jpg"
             alt="Character Creation Process"
             caption="Процесс создания персонажа — от идеи до реализации"
           />
@@ -280,7 +280,7 @@ export function getSectionContent(sectionNumber: number) {
       return (
         <>
           <ImageBlock 
-            src="/images/writing-code.jpg"
+            src="./images/writing-code.jpg"
             alt="Writing Instructions"
             caption="Инструкция — сердце вашего персонажа"
           />
@@ -575,7 +575,7 @@ NPC: Шеф — бывший начальник {{char}}. Антагонисти
       return (
         <>
           <ImageBlock 
-            src="/images/personality-tone.jpg"
+            src="./images/personality-tone.jpg"
             alt="Personality and Tone"
             caption="Тон персонажа — это его эмоциональный отпечаток"
           />
