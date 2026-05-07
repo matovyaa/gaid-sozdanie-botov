@@ -36,7 +36,7 @@ export function getSectionContent(sectionNumber: number) {
       return (
         <>
           <ImageBlock 
-            src="/images/ai-brain.jpg"
+            src="./images/ai-brain.jpg"
             alt="AI Neural Network"
             caption="Как работает ИИ — визуализация нейронной сети"
           />
